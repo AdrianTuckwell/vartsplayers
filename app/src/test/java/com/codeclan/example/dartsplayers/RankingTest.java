@@ -95,11 +95,5 @@ public class RankingTest {
         ranking.addPlayer(player11);
         player = ranking.checkRank(9);
         assertEquals("Brendan Dolan", player.getName());
-
-
     }
-
-
-
-
 }
