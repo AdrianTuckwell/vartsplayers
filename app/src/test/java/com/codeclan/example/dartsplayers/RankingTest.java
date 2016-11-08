@@ -10,6 +10,7 @@ import static org.junit.Assert.*;
 public class RankingTest {
 
     Ranking ranking;
+    Player player;
     Player player1;
     Player player2;
     Player player3;
@@ -73,7 +74,7 @@ public class RankingTest {
         ranking.addPlayer(player8);
         ranking.addPlayer(player9);
         ranking.addPlayer(player10);
-        Player player = ranking.checkRank(0);
+        player = ranking.checkRank(0);
         assertEquals("Jamie Harvey", player.getName());
     }
 
@@ -90,7 +91,7 @@ public class RankingTest {
         ranking.addPlayer(player8);
         ranking.addPlayer(player9);
         ranking.addPlayer(player10);
-        Player player = ranking.removeRank(9);
+        player = ranking.removeRank(9);
         ranking.addPlayer(player11);
         player = ranking.checkRank(9);
         assertEquals("Brendan Dolan", player.getName());
